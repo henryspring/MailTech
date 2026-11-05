@@ -1,0 +1,8 @@
+menu "Mailbox cloud enrollment"
+    config MAILBOX_ENROLLMENT_TOKEN
+        string "Device claim proof key"
+        default ""
+        help
+            Bootstrap secret used only by ESP32 to enroll its unique device token.
+            Configure it locally; do not put it in iOS or commit sdkconfig secrets.
+endmenu
